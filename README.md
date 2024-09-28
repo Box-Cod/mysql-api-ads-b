@@ -27,36 +27,36 @@
     - database-> unicesumar;
 
 - create the "roles" table with the columns:
-    id = automatic increment;
-    name = varchar(127);
+    - id = automatic increment;
+    - name = varchar(127);
 
 - create the "users" table with the columns:
-    id = automatic increment;
-    name = varchar(255);
-    email = varchar(127);
-    password = varchar(127);
-    role = int NULL;
-    registration_dt = datetime;
-    active = int;
+    - id = automatic increment;
+    - name = varchar(255);
+    - email = varchar(127);
+    - password = varchar(127);
+    - role = int NULL;
+    - registration_dt = datetime;
+    - active = int;
   
     "ps: “role” is a foreign key of the “roles” table".
 
 - the "users" table has indexes:
-    id = PRIMARY;
-    email = UNIQUE;
-    role = INDEX;
+    - id = PRIMARY;
+    - email = UNIQUE;
+    - role = INDEX;
   and foreign key "role":
-    destination table = "roles";
-    origin = role;
-    destination = id;
-    ON DELETE = SET NULL;
-    ON UPDATE = RESTRICT;
+    - destination table = "roles";
+    - origin = role;
+    - destination = id;
+    - ON DELETE = SET NULL;
+    - ON UPDATE = RESTRICT;
 
 - create the "categories" table with the columns:
-    id = automatic increment;
-    name = varchar(255);
-    created_at = varchar(127);
-    updated_at = varchar(127);
+    - id = automatic increment;
+    - name = varchar(255);
+    - created_at = varchar(127);
+    - updated_at = varchar(127);
 
 - in the browser go to "localhost:3000/users/form"
 - create a new user
