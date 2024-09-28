@@ -22,9 +22,9 @@
 - in the browser go to "localhost:8080/"
   
 - Enter credentials:
-    user -> root;
-    password-> change123;
-    database-> unicesumar;
+    - user -> root;
+    - password-> change123;
+    - database-> unicesumar;
 
 - create the "roles" table with the columns:
     id = automatic increment;
